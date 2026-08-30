@@ -2196,6 +2196,11 @@ namespace GUI
             _runLogRowsPanel.Children.Clear();
         }
 
+        private void ClearRunLogMenuItem_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            ClearRunLog();
+        }
+
         private async void CopyRunLogButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
             var clipboard = TopLevel.GetTopLevel(this)?.Clipboard;

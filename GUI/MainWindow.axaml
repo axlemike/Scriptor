@@ -151,6 +151,7 @@
             <ScrollViewer.ContextMenu>
               <ContextMenu>
                 <MenuItem Header="Copy Run Log" Click="CopyRunLogButton_Click" />
+                <MenuItem Header="Clear Run Log" Click="ClearRunLogMenuItem_Click" />
               </ContextMenu>
             </ScrollViewer.ContextMenu>
             <StackPanel x:Name="RunLogRowsPanel" Spacing="4" />
