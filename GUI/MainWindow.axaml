@@ -136,7 +136,10 @@
       <Grid RowDefinitions="Auto,*">
         <Grid ColumnDefinitions="*,Auto" Margin="0,0,0,8">
           <TextBlock Text="Run Log" FontSize="16" FontWeight="SemiBold" />
-          <Button Grid.Column="1" x:Name="CopyRunLogButton" Content="Copy Run Log" Padding="8,4" />
+          <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="6">
+            <Button x:Name="CopyRunLogButton" Content="Copy Run Log" Padding="8,4" />
+            <Button Content="Clear Run Log" Click="ClearRunLogMenuItem_Click" Padding="8,4" />
+          </StackPanel>
         </Grid>
         <Grid Grid.Row="1" RowDefinitions="Auto,*">
           <Border Grid.Row="0" BorderThickness="1" BorderBrush="#3F3F46" CornerRadius="4" Padding="6" Background="#1E1E1E">
